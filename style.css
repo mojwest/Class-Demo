@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, lightgray, white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  /* height: 100vh; */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  z-index: 1;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.button {
+  background-color: #3d6ded;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+}
+
+.card {
+  align-items: center;
+  background-image: linear-gradient(to bottom right, white, lightgray);
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 150px;
+  padding: 50px;
+
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+#my-name {
+  text-align: center;
+}
+
+.nav-item {
+  align-self: flex-end;
+  color: #3d6ded;
+  font-size: 18px;
+  margin: 15px;
+  text-decoration: none;
+}
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  height: 180px;
+  margin: 50px;
+  width: 180px;
+}
+
+ul.my-profile {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+  margin: 0.7rem;
+}
+
+.page-title {
+  margin-top: 115px;
+  margin-bottom: 50px;
+}
+.about-me {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.google-map {
+  margin-top: 50px;
+}
+.map-buttons {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.map {
+  display: none;
+}
+.active-map {
+  display: block;
+}
+
+/* contact page  */
+input[type="text"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 75px;
+}
+
+#contact-form:invalid #submit {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: graytext;
+}
+
+/* footer */
+.footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  background-color: #333;
+  width: 100%;
+  color: #f2f2f2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.footer-item {
+  padding: 5px;
+}
